@@ -1,0 +1,47 @@
+spring:
+  cloud:
+    consul:
+      host: consul-cluster.qa.doublefs.com
+      port: 8500
+      discovery:
+        service-name: quality-service-qa #本地环境打开，为了不把qa环境的服务T掉，同时为了访问其他服务的qa环境
+        register: false
+
+db:
+  mysql:
+    write:
+      host: cn-qa-1.db.doublefs.com
+      port: 3306
+      dbname: quality_service
+      username: quality_service
+      password: sdY9jA*D1M}}TtMbcA1O
+    read:
+      host: cn-qa-1.db.doublefs.com
+      port: 3306
+      dbname: quality_service
+      username: quality_service
+      password: sdY9jA*D1M}}TtMbcA1O
+
+  redis:
+    host: cn-qa-1.cache.doublefs.com
+    port: 6379
+
+  kafka:
+    host: b-2.cn-qa-1.cf36z2.c2.kafka.cn-northwest-1.amazonaws.com.cn:9092,b-1.cn-qa-1.cf36z2.c2.kafka.cn-northwest-1.amazonaws.com.cn:9092
+
+config:
+  sentry:
+    dsn: https://b06d3224ce414fca8f16f1c14cc0dfed@sentry.intra.doublefs.com/66
+
+xxl:
+  job:
+    admin:
+      addresses: http://c3-sched-app01:8088/  # ### 调度中心部署跟地址 [选填]：如调度中心集群部署存在多个地址则用逗号分隔。执行器将会使用该地址进行"执行器心跳注册"和"任务结果回调"；为空则关闭自动注册；
+    executor:
+      appname: xxl-job-quality-service-qa # ### 执行器AppName [选填]：执行器心跳注册分组依据；为空则关闭自动注册
+      address:
+      ip: # ### 执行器IP [选填]：默认为空表示自动获取IP，多网卡时可手动设置指定IP，该IP不会绑定Host仅作为通讯实用；地址信息用于 "执行器注册" 和 "调度中心请求并触发任务"；
+      port: 9997 # ### 执行器端口号 [选填]：小于等于0则自动获取；默认端口为9999，单机部署多个执行器时，注意要配置不同执行器端口；
+      accessToken: # ### 执行器通讯TOKEN [选填]：非空时启用；
+      logpath: # ### 执行器运行日志文件存储磁盘路径 [选填] ：需要对该路径拥有读写权限；为空则使用默认路径；
+      logretentiondays: -1 # ### 执行器日志保存天数 [选填] ：值大于3时生效，启用执行器Log文件定期清理功能，否则不生效；

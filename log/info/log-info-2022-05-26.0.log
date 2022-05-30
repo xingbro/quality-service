@@ -1,0 +1,48 @@
+2022-05-26 20:40:45.246 [] [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-05-26 20:40:46.206 [] [main] INFO  c.c.f.f.i.provider.DefaultApplicationProvider - App ID is set to apollo-plm-pattern-service by app.id property from System Property
+2022-05-26 20:40:46.210 [] [main] INFO  c.c.f.f.internals.provider.DefaultServerProvider - Environment is set to null. Because it is not available in either (1) JVM system property 'env', (2) OS env variable 'ENV' nor (3) property 'env' from the properties InputStream.
+2022-05-26 20:40:46.235 [] [main] INFO  c.c.f.apollo.internals.DefaultMetaServerProvider - Located meta services from apollo.meta configuration: https://apollometa.test.doublefs.com!
+2022-05-26 20:40:46.237 [] [main] INFO  com.ctrip.framework.apollo.core.MetaDomainConsts - Located meta server address https://apollometa.test.doublefs.com for env UNKNOWN from com.ctrip.framework.apollo.internals.DefaultMetaServerProvider
+2022-05-26 20:40:47.217 [] [main] INFO  c.d.p.q.service.web.QualityServiceWebApplication - The following profiles are active: dev
+2022-05-26 20:40:48.700 [] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-26 20:40:48.703 [] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-26 20:40:48.735 [] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2022-05-26 20:40:49.215 [] [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2022-05-26 20:40:49.401 [] [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=a34fae97-38ff-3f58-9fe8-9ec1870b1e10
+2022-05-26 20:40:49.554 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$87379b8a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:49.897 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:49.921 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$fb027436] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:49.965 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:49.984 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mzt.logapi.starter.configuration.LogRecordProxyAutoConfiguration' of type [com.mzt.logapi.starter.configuration.LogRecordProxyAutoConfiguration$$EnhancerBySpringCGLIB$$1179471d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:50.009 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'parseFunction' of type [com.mzt.logapi.service.impl.DefaultParseFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:50.018 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'parseFunctionFactory' of type [com.mzt.logapi.service.impl.ParseFunctionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:50.024 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'functionService' of type [com.mzt.logapi.service.impl.DefaultFunctionServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:50.037 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'recordService' of type [com.mzt.logapi.service.impl.DefaultLogRecordServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:50.041 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'operatorGetService' of type [com.mzt.logapi.service.impl.DefaultOperatorGetServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:50.105 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.sleuth.redis-org.springframework.cloud.sleuth.instrument.redis.TraceRedisProperties' of type [org.springframework.cloud.sleuth.instrument.redis.TraceRedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:50.530 [] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8095 (http)
+2022-05-26 20:40:50.541 [] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8095"]
+2022-05-26 20:40:50.541 [] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-26 20:40:50.541 [] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-05-26 20:40:50.671 [] [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-26 20:40:50.671 [] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3394 ms
+2022-05-26 20:40:50.915 [] [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-26 20:40:50.921 [] [main] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5a45c218
+2022-05-26 20:40:55.772 [] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1,master} inited
+2022-05-26 20:40:59.518 [] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2,slave} inited
+2022-05-26 20:40:59.518 [] [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [slave] success
+2022-05-26 20:40:59.519 [] [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2022-05-26 20:40:59.519 [] [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [2] datasource,primary datasource named [master]
+2022-05-26 20:40:59.999 [] [main] INFO  org.redisson.Version - Redisson 3.15.2
+2022-05-26 20:41:05.819 [] [redisson-netty-2-27] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for cn-test-2.cache.doublefs.com/172.16.1.57:6379
+2022-05-26 20:41:06.073 [] [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for cn-test-2.cache.doublefs.com/172.16.1.57:6379
+2022-05-26 20:41:07.024 [] [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2022-05-26 20:41:07.030 [] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closing ...
+2022-05-26 20:41:07.038 [] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+2022-05-26 20:41:07.040 [] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2022-05-26 20:41:07.042 [] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-05-26 20:41:07.042 [] [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2022-05-26 20:41:07.045 [] [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-05-26 20:41:07.085 [] [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.

@@ -1,0 +1,5 @@
+# Project exclude paths
+/quality-service-data/target/
+/quality-service-feign/target/
+/quality-service-service/target/
+/quality-service-web/target/

@@ -1,0 +1,80 @@
+include:
+  remote: 'https://git.intra.doublefs.com/sys/antimage/-/raw/master/.gitlab-ci-template.yml'
+
+stages:
+  - lint
+  - build-image
+  - deploy to prod
+  - deploy to test
+  - deploy to qa
+
+build-image:
+  only:
+    - release
+    - feature
+    - qa
+
+variables:
+  DFS_SVC_NAME: quality-service
+  DFS_SVC_PORT: 8095
+  DFS_SVC_CMD: java $JAVA_OPTS -jar /application.jar
+
+deploy to test:
+  only:
+    - feature
+  extends: .deploy
+  environment:
+    name: c3
+  variables:
+    JAVA_OPTS: -server -XX:+HeapDumpOnOutOfMemoryError -Xms768m -Xmx768m -Duser.timezone=Asia/Shanghai -Dspring.profiles.active=test -Dsentry.environment=test
+    DFS_SVC_REPLICACOUNT: 1
+    DFS_SVC_CPU: 1
+    DFS_SVC_MEMORY: 1G
+  stage: deploy to test
+
+deploy to qa:
+  only:
+    - qa
+  extends: .deploy
+  environment:
+    name: qa
+  variables:
+    JAVA_OPTS: -server -XX:+HeapDumpOnOutOfMemoryError -Xms768m -Xmx768m -Duser.timezone=Asia/Shanghai -Dspring.profiles.active=qa -Dsentry.environment=qa
+    DFS_SVC_REPLICACOUNT: 1
+    DFS_SVC_CPU: 1
+    DFS_SVC_MEMORY: 1G
+  stage: deploy to qa
+
+
+deploy to prod:
+  only:
+    - release
+  extends: .deploy
+  environment:
+    name: c1
+  variables:
+    JAVA_OPTS: -server -XX:+HeapDumpOnOutOfMemoryError -Duser.timezone=Asia/Shanghai -Dspring.profiles.active=prod -Dsentry.environment=prod
+    DFS_SVC_REPLICACOUNT: 3
+    DFS_SVC_CPU: 4
+    DFS_SVC_MEMORY: 4G
+  stage: deploy to prod
+
+sonarqube-check:
+  stage: lint
+  image: hub.intra.doublefs.com/sys/baseimage/maven:3.8.1-jdk-11
+  variables:
+    SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"  # Defines the location of the analysis task cache
+    GIT_DEPTH: "0"  # Tells git to fetch all the branches of the project, required by the analysis task
+  cache:
+    key: "${CI_JOB_NAME}"
+    paths:
+      - .sonar/cache
+  script:
+    - mvn verify sonar:sonar -Dmaven.test.skip=true
+  allow_failure: true
+  only:
+#    - qa
+    - /^feature-*/
+    - release
+    - /^bugfix-*/
+

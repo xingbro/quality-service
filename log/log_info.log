@@ -1,0 +1,52 @@
+2022-05-27 18:40:27.309 [] [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-05-27 18:40:28.146 [] [main] INFO  c.d.p.q.service.web.QualityServiceWebApplication - The following profiles are active: qa
+2022-05-27 18:40:29.487 [] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-27 18:40:29.489 [] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-27 18:40:29.521 [] [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2022-05-27 18:40:30.113 [] [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=602e36e2-6844-3980-ac02-47563f3f7a90
+2022-05-27 18:40:30.253 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$c3476b8d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-27 18:40:30.568 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-27 18:40:30.591 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$37124439] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-27 18:40:30.633 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-27 18:40:30.661 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.mzt.logapi.starter.configuration.LogRecordProxyAutoConfiguration' of type [com.mzt.logapi.starter.configuration.LogRecordProxyAutoConfiguration$$EnhancerBySpringCGLIB$$4d891720] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-27 18:40:30.689 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'parseFunction' of type [com.mzt.logapi.service.impl.DefaultParseFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-27 18:40:30.699 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'parseFunctionFactory' of type [com.mzt.logapi.service.impl.ParseFunctionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-27 18:40:30.708 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'functionService' of type [com.mzt.logapi.service.impl.DefaultFunctionServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-27 18:40:30.720 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'recordService' of type [com.mzt.logapi.service.impl.DefaultLogRecordServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-27 18:40:30.723 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'operatorGetService' of type [com.mzt.logapi.service.impl.DefaultOperatorGetServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-27 18:40:30.773 [] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.sleuth.redis-org.springframework.cloud.sleuth.instrument.redis.TraceRedisProperties' of type [org.springframework.cloud.sleuth.instrument.redis.TraceRedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-27 18:40:31.145 [] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8095 (http)
+2022-05-27 18:40:31.157 [] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8095"]
+2022-05-27 18:40:31.158 [] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-27 18:40:31.158 [] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-05-27 18:40:31.295 [] [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-27 18:40:31.295 [] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3047 ms
+2022-05-27 18:40:31.542 [] [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-27 18:40:31.548 [] [main] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@578d5d02
+2022-05-27 18:40:35.996 [] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1,master} inited
+2022-05-27 18:40:39.472 [] [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2,slave} inited
+2022-05-27 18:40:39.474 [] [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [slave] success
+2022-05-27 18:40:39.474 [] [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2022-05-27 18:40:39.474 [] [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [2] datasource,primary datasource named [master]
+2022-05-27 18:40:40.252 [] [main] INFO  org.redisson.Version - Redisson 3.15.2
+2022-05-27 18:40:45.850 [] [redisson-netty-2-14] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for cn-qa-1.cache.doublefs.com/172.16.1.187:6379
+2022-05-27 18:40:46.114 [] [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for cn-qa-1.cache.doublefs.com/172.16.1.187:6379
+2022-05-27 18:40:46.968 [] [main] INFO  com.doublefs.scm.open.common.config.RedisConfig - 初始化redis缓存...
+2022-05-27 18:40:47.355 [] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2022-05-27 18:40:47.356 [] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'commonThread'
+2022-05-27 18:40:47.378 [] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2022-05-27 18:40:47.378 [] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'thread4Mq'
+2022-05-27 18:40:47.478 [] [main] INFO  com.doublefs.scm.open.common.config.XxlJobConfig - =======>xxl-job config init http://c3-sched-app01:8088/<=======
+2022-05-27 18:40:47.491 [] [main] INFO  com.doublefs.scm.open.common.config.MyThread - 初始化线程池......
+2022-05-27 18:40:47.491 [] [main] INFO  com.doublefs.scm.open.common.config.MyThread - CPU核心数:8  核心线程数:100 最大线程数:200 阻塞队列:200
+2022-05-27 18:40:47.491 [] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'taskExecutor'
+2022-05-27 18:40:47.507 [] [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-27 18:40:48.912 [] [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'catalogWatchTaskScheduler'
+2022-05-27 18:40:49.089 [] [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 19 endpoint(s) beneath base path '/actuator'
+2022-05-27 18:40:49.404 [] [Thread-17] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9997
+2022-05-27 18:40:49.462 [] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8095"]
+2022-05-27 18:40:49.512 [] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8095 (http) with context path ''
+2022-05-27 18:40:49.575 [] [main] INFO  c.d.p.q.service.web.QualityServiceWebApplication - Started QualityServiceWebApplication in 22.853 seconds (JVM running for 29.23)
+2022-05-27 18:40:49.981 [] [RMI TCP Connection(3)-10.3.16.99] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-27 18:40:49.983 [] [RMI TCP Connection(3)-10.3.16.99] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-27 18:40:50.012 [] [RMI TCP Connection(3)-10.3.16.99] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 29 ms

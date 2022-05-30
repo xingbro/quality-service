@@ -1,0 +1,225 @@
+2022-05-26 20:40:45,147 DEBUG (?:?)- Application started with classpath: unknown
+2022-05-26 20:40:45,242 DEBUG (?:?)- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2022-05-26 20:40:45,246 INFO (?:?)- HV000001: Hibernate Validator 6.1.5.Final
+2022-05-26 20:40:45,255 DEBUG (?:?)- Trying to load META-INF/validation.xml for XML based Validator configuration.
+2022-05-26 20:40:45,256 DEBUG (?:?)- Trying to load META-INF/validation.xml via TCCL
+2022-05-26 20:40:45,256 DEBUG (?:?)- Apollo bootstrap config is not enabled for context org.springframework.context.annotation.AnnotationConfigApplicationContext@22101c80, started on Thu Jan 01 08:00:00 CST 1970, see property: ${apollo.bootstrap.enabled}
+2022-05-26 20:40:45,256 DEBUG (?:?)- Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2022-05-26 20:40:45,257 DEBUG (?:?)- No META-INF/validation.xml found. Using annotation based configuration only.
+2022-05-26 20:40:45,261 DEBUG (?:?)- Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2022-05-26 20:40:45,263 DEBUG (?:?)- Loading source class org.springframework.cloud.bootstrap.BootstrapImportSelectorConfiguration
+2022-05-26 20:40:45,294 DEBUG (?:?)- Loaded expression factory via original TCCL
+2022-05-26 20:40:45,420 DEBUG (?:?)- HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+2022-05-26 20:40:45,428 DEBUG (?:?)- HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2022-05-26 20:40:45,428 DEBUG (?:?)- HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2022-05-26 20:40:45,428 DEBUG (?:?)- HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2022-05-26 20:40:45,430 DEBUG (?:?)- HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2022-05-26 20:40:45,430 DEBUG (?:?)- HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2022-05-26 20:40:45,494 DEBUG (?:?)- Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@22101c80
+2022-05-26 20:40:45,509 DEBUG (?:?)- Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2022-05-26 20:40:45,520 DEBUG (?:?)- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2022-05-26 20:40:45,650 WARN (?:?)- For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-05-26 20:40:45,706 DEBUG (?:?)- Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+2022-05-26 20:40:45,711 DEBUG (?:?)- Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2022-05-26 20:40:45,712 DEBUG (?:?)- Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2022-05-26 20:40:45,721 DEBUG (?:?)- Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2022-05-26 20:40:45,723 DEBUG (?:?)- Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2022-05-26 20:40:45,725 DEBUG (?:?)- Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2022-05-26 20:40:45,728 DEBUG (?:?)- Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
+2022-05-26 20:40:45,728 DEBUG (?:?)- Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinderFactory'
+2022-05-26 20:40:45,732 DEBUG (?:?)- Creating shared instance of singleton bean 'configurationPropertiesBeans'
+2022-05-26 20:40:45,741 DEBUG (?:?)- Creating shared instance of singleton bean 'bootstrapImportSelectorConfiguration'
+2022-05-26 20:40:45,742 DEBUG (?:?)- Creating shared instance of singleton bean 'org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration'
+2022-05-26 20:40:45,752 DEBUG (?:?)- Creating shared instance of singleton bean 'org.springframework.boot.context.properties.BoundConfigurationProperties'
+2022-05-26 20:40:45,753 DEBUG (?:?)- Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata'
+2022-05-26 20:40:45,754 DEBUG (?:?)- Creating shared instance of singleton bean 'spring.cloud.config-org.springframework.cloud.bootstrap.config.PropertySourceBootstrapProperties'
+2022-05-26 20:40:45,768 DEBUG (?:?)- Creating shared instance of singleton bean 'org.springframework.cloud.bootstrap.encrypt.EncryptionBootstrapConfiguration'
+2022-05-26 20:40:45,771 DEBUG (?:?)- Creating shared instance of singleton bean 'encrypt-org.springframework.cloud.bootstrap.encrypt.KeyProperties'
+2022-05-26 20:40:45,775 DEBUG (?:?)- Creating shared instance of singleton bean 'environmentDecryptApplicationListener'
+2022-05-26 20:40:45,777 DEBUG (?:?)- Creating shared instance of singleton bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration'
+2022-05-26 20:40:45,783 DEBUG (?:?)- Creating shared instance of singleton bean 'configurationPropertiesRebinder'
+2022-05-26 20:40:45,784 DEBUG (?:?)- Autowiring by type from bean name 'configurationPropertiesRebinder' via factory method to bean named 'configurationPropertiesBeans'
+2022-05-26 20:40:45,799 DEBUG (?:?)- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+2022-05-26 20:40:45,800 DEBUG (?:?)- Creating shared instance of singleton bean 'org.springframework.cloud.util.random.CachedRandomPropertySourceAutoConfiguration'
+2022-05-26 20:40:45,818 DEBUG (?:?)- 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   ConfigurationPropertiesRebinderAutoConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor; SearchStrategy: all) found bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor' (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration#configurationPropertiesBeans matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesBeans; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesRebinderAutoConfiguration#configurationPropertiesRebinder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.context.properties.ConfigurationPropertiesRebinder; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   EncryptionBootstrapConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.crypto.encrypt.TextEncryptor' (OnClassCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   ConsulDiscoveryClientConfigServiceBootstrapConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.cloud.config.client.ConfigServicePropertySourceLocator' (OnClassCondition)
+
+   EncryptionBootstrapConfiguration.RsaEncryptionConfiguration:
+      Did not match:
+         - Keystore nor key found in Environment (EncryptionBootstrapConfiguration.KeyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.rsa.crypto.RsaSecretEncryptor' (OnClassCondition)
+
+   EncryptionBootstrapConfiguration.VanillaEncryptionConfiguration:
+      Did not match:
+         - @ConditionalOnMissingClass found unwanted class 'org.springframework.security.rsa.crypto.RsaSecretEncryptor' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-05-26 20:40:45,820 DEBUG (?:?)- Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+2022-05-26 20:40:46,206 INFO (?:?)- App ID is set to apollo-plm-pattern-service by app.id property from System Property
+2022-05-26 20:40:46,210 INFO (?:?)- Environment is set to null. Because it is not available in either (1) JVM system property 'env', (2) OS env variable 'ENV' nor (3) property 'env' from the properties InputStream.
+2022-05-26 20:40:46,235 INFO (?:?)- Located meta services from apollo.meta configuration: https://apollometa.test.doublefs.com!
+2022-05-26 20:40:46,237 INFO (?:?)- Located meta server address https://apollometa.test.doublefs.com for env UNKNOWN from com.ctrip.framework.apollo.internals.DefaultMetaServerProvider
+2022-05-26 20:40:47,217 INFO (?:?)- The following profiles are active: dev
+2022-05-26 20:40:48,700 INFO (?:?)- Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-26 20:40:48,703 INFO (?:?)- Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-26 20:40:48,735 INFO (?:?)- Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2022-05-26 20:40:48,874 WARN (?:?)- Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-26 20:40:49,215 INFO (?:?)- Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2022-05-26 20:40:49,401 INFO (?:?)- BeanFactory id=a34fae97-38ff-3f58-9fe8-9ec1870b1e10
+2022-05-26 20:40:49,424 WARN (?:?)- Multiple PropertySourcesPlaceholderConfigurer beans registered [propertySourcesPlaceholderConfigurer, org.springframework.context.support.PropertySourcesPlaceholderConfigurer], falling back to Environment
+2022-05-26 20:40:49,554 INFO (?:?)- Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$87379b8a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:49,897 INFO (?:?)- Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:49,921 INFO (?:?)- Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$fb027436] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:49,965 INFO (?:?)- Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:49,984 INFO (?:?)- Bean 'com.mzt.logapi.starter.configuration.LogRecordProxyAutoConfiguration' of type [com.mzt.logapi.starter.configuration.LogRecordProxyAutoConfiguration$$EnhancerBySpringCGLIB$$1179471d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:50,009 INFO (?:?)- Bean 'parseFunction' of type [com.mzt.logapi.service.impl.DefaultParseFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:50,018 INFO (?:?)- Bean 'parseFunctionFactory' of type [com.mzt.logapi.service.impl.ParseFunctionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:50,024 INFO (?:?)- Bean 'functionService' of type [com.mzt.logapi.service.impl.DefaultFunctionServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:50,037 INFO (?:?)- Bean 'recordService' of type [com.mzt.logapi.service.impl.DefaultLogRecordServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:50,041 INFO (?:?)- Bean 'operatorGetService' of type [com.mzt.logapi.service.impl.DefaultOperatorGetServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:50,105 INFO (?:?)- Bean 'spring.sleuth.redis-org.springframework.cloud.sleuth.instrument.redis.TraceRedisProperties' of type [org.springframework.cloud.sleuth.instrument.redis.TraceRedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-26 20:40:50,530 INFO (?:?)- Tomcat initialized with port(s): 8095 (http)
+2022-05-26 20:40:50,541 INFO (?:?)- Initializing ProtocolHandler ["http-nio-8095"]
+2022-05-26 20:40:50,541 INFO (?:?)- Starting service [Tomcat]
+2022-05-26 20:40:50,541 INFO (?:?)- Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-05-26 20:40:50,671 INFO (?:?)- Initializing Spring embedded WebApplicationContext
+2022-05-26 20:40:50,671 INFO (?:?)- Root WebApplicationContext: initialization completed in 3394 ms
+2022-05-26 20:40:50,914 WARN (?:?)- No URLs will be polled as dynamic configuration sources.
+2022-05-26 20:40:50,915 INFO (?:?)- To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-26 20:40:50,921 INFO (?:?)- DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5a45c218
+2022-05-26 20:40:55,772 INFO (?:?)- {dataSource-1,master} inited
+2022-05-26 20:40:59,518 INFO (?:?)- {dataSource-2,slave} inited
+2022-05-26 20:40:59,518 INFO (?:?)- dynamic-datasource - add a datasource named [slave] success
+2022-05-26 20:40:59,519 INFO (?:?)- dynamic-datasource - add a datasource named [master] success
+2022-05-26 20:40:59,519 INFO (?:?)- dynamic-datasource initial loaded [2] datasource,primary datasource named [master]
+2022-05-26 20:40:59,999 INFO (?:?)- Redisson 3.15.2
+2022-05-26 20:41:05,819 INFO (?:?)- 1 connections initialized for cn-test-2.cache.doublefs.com/172.16.1.57:6379
+2022-05-26 20:41:06,073 INFO (?:?)- 24 connections initialized for cn-test-2.cache.doublefs.com/172.16.1.57:6379
+2022-05-26 20:41:06,817 WARN (?:?)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'apolloTestController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apolloConfigProperties': Unsatisfied dependency expressed through field 'mapAndMap'; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1001E: Type conversion problem, cannot convert from java.util.Collections$UnmodifiableMap<?, ?> to java.lang.String
+2022-05-26 20:41:07,024 INFO (?:?)- dynamic-datasource start closing ....
+2022-05-26 20:41:07,030 INFO (?:?)- {dataSource-2} closing ...
+2022-05-26 20:41:07,038 INFO (?:?)- {dataSource-2} closed
+2022-05-26 20:41:07,040 INFO (?:?)- {dataSource-1} closing ...
+2022-05-26 20:41:07,042 INFO (?:?)- {dataSource-1} closed
+2022-05-26 20:41:07,042 INFO (?:?)- dynamic-datasource all closed success,bye
+2022-05-26 20:41:07,045 INFO (?:?)- Stopping service [Tomcat]
+2022-05-26 20:41:07,059 WARN (?:?)- The web application [ROOT] appears to have started a thread named [Apollo-SpringValueRegistry-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.11/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.11/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.11/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.11/java.lang.Thread.run(Thread.java:834)
+2022-05-26 20:41:07,085 INFO (?:?)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-26 20:41:07,095 ERROR (?:?)- Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'apolloTestController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apolloConfigProperties': Unsatisfied dependency expressed through field 'mapAndMap'; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1001E: Type conversion problem, cannot convert from java.util.Collections$UnmodifiableMap<?, ?> to java.lang.String
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.doublefs.plm.quality.service.web.QualityServiceWebApplication.main(QualityServiceWebApplication.java:28)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apolloConfigProperties': Unsatisfied dependency expressed through field 'mapAndMap'; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1001E: Type conversion problem, cannot convert from java.util.Collections$UnmodifiableMap<?, ?> to java.lang.String
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:521)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:497)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:650)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:239)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:318)
+	... 18 common frames omitted
+Caused by: org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1001E: Type conversion problem, cannot convert from java.util.Collections$UnmodifiableMap<?, ?> to java.lang.String
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:169)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.evaluateBeanDefinitionString(AbstractBeanFactory.java:1575)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 36 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1001E: Type conversion problem, cannot convert from java.util.Collections$UnmodifiableMap<?, ?> to java.lang.String
+	at org.springframework.expression.spel.support.StandardTypeConverter.convertValue(StandardTypeConverter.java:75)
+	at org.springframework.expression.common.ExpressionUtils.convertTypedValue(ExpressionUtils.java:57)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:310)
+	at org.springframework.expression.common.CompositeStringExpression.getValue(CompositeStringExpression.java:108)
+	at org.springframework.expression.common.CompositeStringExpression.getValue(CompositeStringExpression.java:43)
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:166)
+	... 40 common frames omitted
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.util.Collections$UnmodifiableMap<?, ?>] to type [java.lang.String]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:321)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:194)
+	at org.springframework.expression.spel.support.StandardTypeConverter.convertValue(StandardTypeConverter.java:70)
+	... 45 common frames omitted

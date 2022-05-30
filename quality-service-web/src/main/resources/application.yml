@@ -1,0 +1,143 @@
+server:
+  port: 8095
+
+spring:
+  application:
+    name: quality-service
+
+  profiles:
+    active: @profileActive@
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+  cloud:
+    consul:
+      discovery:
+        prefer-ip-address: true
+        service-name: ${spring.application.name}
+        enabled: true
+        tags:
+          [ metrics=true,metrics-path=/actuator/prometheus ]
+        health-check-path: /actuator/health
+        health-check-interval: 10s
+        health-check-critical-timeout: 50s
+    #      host: consul-c3.test.doublefs.com
+    loadbalancer:
+      ribbon:
+        enabled: true
+  datasource:
+    dynamic:
+      primary: master #设置默认的数据源或者数据源组,默认值即为master
+      strict: false #严格匹配数据源,默认false. true未匹配到指定数据源时抛异常,false使用默认数据源
+      druid: # 全局druid参数，绝大部分值和默认保持一致。(现已支持的参数如下,不清楚含义不要乱设置)
+        # 连接池的配置信息
+        # 初始化大小，最小，最大
+        initial-size: 5
+        min-idle: 5
+        maxActive: 20
+        # 配置获取连接等待超时的时间
+        maxWait: 60000
+        # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+        timeBetweenEvictionRunsMillis: 60000
+        # 配置一个连接在池中最小生存的时间，单位是毫秒
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: SELECT 1 FROM DUAL
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        # 打开PSCache，并且指定每个连接上PSCache的大小
+        poolPreparedStatements: true
+        maxPoolPreparedStatementPerConnectionSize: 20
+        # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+        filters: stat,wall,slf4j
+        # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+        connectionProperties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
+      datasource:
+        master:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          type: com.alibaba.druid.pool.DruidDataSource
+          url: jdbc:mysql://${db.mysql.write.host}:${db.mysql.write.port}/${db.mysql.write.dbname}?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&rewriteBatchedStatements=TRUE&serverTimezone=UTC
+          username: ${db.mysql.write.username}
+          password: ${db.mysql.write.password}
+        slave:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          type: com.alibaba.druid.pool.DruidDataSource
+          url: jdbc:mysql://${db.mysql.read.host}:${db.mysql.read.port}/${db.mysql.read.dbname}?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&rewriteBatchedStatements=TRUE&serverTimezone=UTC
+          username: ${db.mysql.read.username}
+          password: ${db.mysql.read.password}
+
+
+  kafka:
+    #bootstrap
+    bootstrap-servers: ${db.kafka.host}
+    producer:
+      retries: 0
+      #每次批量发送消息的数量
+      batch-size: 16384
+      buffer-memory: 33554432
+      #指定消息key和消息体的编解码方式
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+    consumer:
+      maxPollRecords: 5
+      group-id: rcm-ofc-group
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+      auto-commit-interval: 100
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  redis:
+    host: ${db.redis.host}
+    port: ${db.redis.port}
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        min-idle: 0
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    root: info
+    com.doublefs.plm.mes.service.data.mapper: debug
+    feign.Logger: debug
+
+feign:
+  client:
+    default-config: my-config
+    config:
+      default:
+        connect-timeout: 30000
+        read-timeout: 30000
+
+management:
+  # 显示健康检查的详情
+  endpoint:
+    health:
+      show-details: always
+  #为指标设置一个名为 xxxx 的tag
+  metrics:
+    tags:
+      application: ${spring.application.name}
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+#sentry dsn配置
+sentry:
+  dsn: ${config.sentry.dsn}
+
+mybatis-plus:
+  global-config.db-config.id-type: auto
+  configuration:
+    use-generated-keys: true
+
